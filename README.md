@@ -1,4 +1,4 @@
 # CMSC-123
-Data Structures
-Second year, First Semester
+Data Structures <br /> Second year, First Semester
+
 ----------------
