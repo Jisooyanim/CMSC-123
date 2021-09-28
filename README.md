@@ -7,4 +7,6 @@ Ungraded Codes<br /> Codes for further learning in Java
 
 --------------
 ## `Exercises`
-Graded Codes
+Graded Codes<br />
+
+-------------
