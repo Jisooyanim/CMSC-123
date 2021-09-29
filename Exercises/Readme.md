@@ -49,7 +49,7 @@ Write an algorithm that solves the computational problem stated above. Implement
 Note that the input and output of your program must be in the following format:
 
 ========================================================
-
+```
 Input:
 
 5                                  
@@ -58,13 +58,12 @@ Input:
 
 3                                  
 
-========================================================
 
 Output:
 
 [7,2,8,3,1]
 
-
+```
 ========================================================
 
 You may use the test cases below to evaluate your solution:
