@@ -98,3 +98,161 @@ Output:
 ```
 
 -------------------
+## `Find_all.py`
+Implement the FindAll(A, x, condition)method in your List class so that it returns a list containing the indices of all elements in an array A that satisfies the condition  given the target value x. For example, let A = [3, 1, 2, 4, 3, 6] be a zero-indexed list. Then, FindAll(A, 3, ‘==’) returns B = [0, 4]. The method must be able to use the following conditions for a List of numeric types:
+
+1. Equal: “==”
+
+2. Greater than: ">"
+
+3. Less than: "<"
+
+4. Greater than or equal: ">="
+
+5. Less than or equal: "<="
+
+6. Not equal: "!="
+
+ If A is a list of Strings, then only condition 1 and 6 will apply. The empty string will be returned if no element satisfies a given condition (as in test case#4). In this exercise, we will only assume two data types  for the list elements – (i) Integer type, and (ii) String type, for brevity.
+
+
+
+**Test case #1:** (Command Line/Terminal Format as in Lab Exercise 1)
+```
+Input: 6                 Expected number of elements in the list
+
+       Numeric           Type of list elements
+
+       3 1 2 4 3 6       The input list must be formatted like this
+
+       ==                The condition must be formatted like this
+
+       3                 This is the target value
+
+ Output: 0 4
+```
+**Test case #2:**
+```
+Input: 6
+
+            String
+
+            Hello ABC World Happy World Auto
+
+            !=
+
+            World
+
+ Output:  0 1 3 5
+```
+ 
+**Test case #3:**
+```
+Input: 6
+
+           Numeric
+
+           3 1 2 4 3 6
+
+           <
+
+           4
+
+ Output: 0 1 2 4
+```
+**Test case #4:**
+```
+Input: 6
+
+           Numeric
+
+           3 1 2 4 3 6
+
+           >=
+
+           7
+
+Output:
+```
+-------------------------------
+
+## `Remove_all.py`
+
+Implement the RemoveAll(A, x, condition)method in your List class so that it removes all elements in the array A that satisfies the condition  given the target value x. For example, let A = [3, 1, 2, 4, 3, 6] be a zero-indexed list. Then, RemoveAll (A, 3, ‘==’) returns A' = [1, 2, 4, 6]. The method must be able to use the following conditions for a List of numeric types: 
+
+1. Equal: “==”
+
+2. Greater than: “>”
+
+3. Less than: “<”
+
+4. Greater than or equal: “>=”
+
+5. Less than or equal: “<=”
+
+6. Not equal: “!=”
+
+ 
+
+If A is a list of Strings, then only condition 1 and 6 will apply. In this exercise, we will only assume two data types  for the list elements – (i) Integer type, and (ii) String type, for brevity.
+
+**Test case #1:**
+```
+Input: 6                 Expected number of elements in the list
+
+       Numeric           Expected Type of elements
+
+       3 1 2 4 3 6       The input list must be formatted like this
+
+       ==                The condition must be formatted like this
+
+       3                This is the target value 
+
+Output: 1 2 4 6
+```
+**Test case #2:**
+```
+Input: 7
+
+       Numeric
+
+       1 7 2 1 6 7 2
+
+       >
+
+       3
+
+ 
+
+Output: 1 2 1 2
+```
+**Test case #3:** 
+```
+Input: 7
+
+       Numeric
+
+       1 7 2 1 6 7 2
+
+       ==
+
+       2
+
+ 
+
+Output: 1 7 1 6 7
+```
+**Test case #4:**
+```
+Input: 7
+
+       Numeric
+
+       1 7 2 1 6 7 2
+
+       ==
+
+       5
+
+Output: 1 7 2 1 6 7 2
+```
