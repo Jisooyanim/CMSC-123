@@ -17,8 +17,9 @@ def valid_input(input, mode):
         else:
             return 0
 
-B = []
+
 def find_all(A, x, condition):
+    B = []
     if condition == "==":
         for i in range(len(A)):
             if A[i] == x:
@@ -44,35 +45,30 @@ def find_all(A, x, condition):
             if A[i] != x:
                 B.append(i)
 
-def print_array(arr):
-    if len(arr) == 0:
-        print(" ")
-    else:
-        for i in range(0, len(arr)):
-            print(arr[i], end = " ")
+    print("Output: ", end = " ")
+    print(*B)
 
-arr_size = int(input())
+
+arr_size = int(input().strip())
 if valid_input(arr_size, 0) == False:
     quit()
-type = input()
+type = input().strip()
 if valid_input(type,1) == 0:
     quit()
 if valid_input(type, 1) == 1:
     array = list(int(arr) 
     for arr in input().strip().split())[:arr_size]
-    condition = input()
+    condition = input().strip()
     if valid_input(condition, 2) == 0:
         quit()
-    x = int(input())
+    x = int(input().strip())
     find_all(array, x, condition)
-    print_array(B)
 
 elif valid_input(type,1) == 2:
     array = list(str(arr) 
     for arr in input().strip().split())[:arr_size]
-    condition = input()
+    condition = input().strip()
     if valid_input(condition, 2) == 0:
         quit()
-    x = input()
-    find_all(array, x, condition)
-    print_array(B)  
+    x = input().strip()
+    find_all(array, x, condition)  
