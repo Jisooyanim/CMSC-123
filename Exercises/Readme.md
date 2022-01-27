@@ -256,3 +256,68 @@ Input: 7
 
 Output: 1 7 2 1 6 7 2
 ```
+---------------------------------
+## `Brackets.py`
+You are to create a program that parses a string with brackets. The program must be able to check whether the brackets: {}, [], and (), are balanced. If all the brackets in the string are correctly balanced, then the program must output “Success.” Otherwise, output the 1-based index of the first unmatched closing bracket. If there are no closing brackets, then output the first unmatched opening bracket. 
+
+Input: A string S of lowercase alphabets (e.g., a, b, c,…,z), digits, punctuation marks, and the brackets: [],(), and {}.
+
+Output: “Success” (excluding the quotation marks) or the 1-based index of the first unmatched closing bracket. If there are no closing brackets, then output the 1-based index of the first unmatched opening bracket.
+
+Hint: Notice that when reading an opening bracket  we expect a corresponding closing bracket somewhere in the string. What data structure best stores the closing brackets so we can get them later in the correct order?
+**Test case #1**
+```
+Input: print(“hello world!”)
+Output: Success
+```
+**Test case #2**
+```
+Input:  foo(bar[i);
+Output: 10
+```
+-----------------------
+## `Stacks.py`
+In class, we discussed the POP and PUSH operations of a stack. In this exercise, in addition to the pop() and push() methods, implement a stack with a max() method, which finds the maximum element in the stack. Assume that underflow and overflow errors will not occur in this exercise.
+
+Input: A number representing the number of operations to the stack and a string of operations on the stack.
+
+Output: For each “max” operation, print the current maximum value in the stack. If the stack is empty when max is queried, then print "-100" (excluding the quotation marks). Only the max operation prints an output.
+
+**Test case #1**
+```
+ Input:      5             //Number of stack operations
+
+             push 2        //an operation that pushes the element '2' to the stack
+
+             push 1
+
+             max            //an operation for getting the current max in the stack
+
+             pop            //an operation for popping the top element of the stack
+
+             max    
+             
+ Output: 2               // output of first max operation
+
+         2               // output of second max operation
+```
+
+**Test case #2**
+```
+Input:  5
+
+        push 1                
+
+        push 2
+
+        max
+
+        pop
+        
+        max
+        
+ Output: 2           
+
+         1         
+```
+                   
